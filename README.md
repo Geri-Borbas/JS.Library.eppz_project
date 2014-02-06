@@ -52,6 +52,7 @@ Configuration file for GruntJS (override project specific stuff).
 
 
 [`.gitignore`](https://github.com/eppz/eppz-project/blob/master/.gitignore)
+--------------
 Untrack temporary files.
 
 
@@ -59,23 +60,23 @@ Folders
 -------
 Create directory structure like below.
 ```
-root
--assets
--build
- -derived
- -UI // Same relative position to `assets` as `UI/scss`
--Classes
- -eppz!js
-  -eppz!js.min.js
- -app.js
--UI
---scss
----index.scss
-.gitignore
-Gruntfile.js
-index.html
-package.json
-README.md
+.
+├── assets
+├── build
+    ├── derived
+    └── UI // Same relative position to `assets` as `UI/scss`
+├── Classes
+    ├── eppz!js
+        └── eppz!js.min.js
+    └── app.js
+├── UI
+    └── scss
+        └── index.scss
+├── .gitignore
+├── Gruntfile.js
+├── index.html
+├── package.json
+└── README.md
 ```
 
 
