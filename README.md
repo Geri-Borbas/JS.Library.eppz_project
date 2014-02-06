@@ -87,4 +87,16 @@ grunt
 ```
 
 
+Goodies
+=======
 
+Simply use `include` at the top of sources.
+```
+include('AwesomeClassToUse.js');
+
+// With spectacular Objective-JavaScript tools from eppz!js.
+var AlreadyAwesoemClass = Class.extend
+({
+	...
+});
+```
