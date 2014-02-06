@@ -35,7 +35,7 @@ Per project
 
 
 [`package.json`](https://github.com/eppz/eppz-project/blob/master/package.json)
----
+----------------
 Configuration file for Node package manager.
 
 
@@ -47,11 +47,12 @@ Grunt
 
 
 [`Grunfile.js`](https://github.com/eppz/eppz-project/blob/master/Gruntfile.js)
----
+---------------
 Configuration file for GruntJS.
 
 
-Start watching.
+Start watching
+--------------
 ```
 grunt
 ```
