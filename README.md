@@ -68,7 +68,7 @@ Create directory structure like below.
 ├── Classes
     ├── eppz!js
         └── eppz!js.min.js
-    └── app.js
+    └── <ProjectName>!app.js
 ├── UI
     └── scss
         └── index.scss

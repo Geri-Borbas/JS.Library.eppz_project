@@ -22,11 +22,7 @@ module.exports = function(grunt)
         // Minifiy 'build/derived' results.
         uglify:
         {
-
-            /**
-             * labs!transform!app.
-             */
-            labs_transform :
+            app :
             {
                 options:
                 { banner: '/* <%= package.name %> <%= package.version %> */\n' },
@@ -34,7 +30,10 @@ module.exports = function(grunt)
                 files :
                 {
                     'build/<%= package.name %>.min.js' :
-                    [ 'build/derived/Classes/labs!transform!app.js' ],
+                    [ 'build/derived/Classes/<%= package.name %>!app.js' ],
+
+                    'build/<%= package.version %>/<%= package.name %>!app_<%= package.version %>.min.js' :
+                    [ 'build/derived/Classes/<%= package.name %>!app.js' ],
                 },
             },
 
@@ -52,7 +51,7 @@ module.exports = function(grunt)
                 [
                     {
                         expand: true,
-                        cwd: 'UI',
+                        cwd: 'UI/scss',
                         src: ['*.scss'],
                         dest: 'build/UI',
                         ext: '.css'
