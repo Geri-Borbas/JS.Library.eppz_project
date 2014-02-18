@@ -16,7 +16,8 @@ module.exports = function(grunt)
 
             files:
             {
-                src: ['Classes/**/*.js', 'Tests/suite/**/*.js'],
+                //cwd: 'Classes',
+                src: ['**/*.js'],
                 dest: 'build/derived',
             },
         },

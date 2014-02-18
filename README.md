@@ -56,6 +56,11 @@ Configuration file for GruntJS (override project specific stuff).
 Untrack temporary files.
 
 
+Mocha
+-----
+Create `Tests` folder like below. Put test into `Suite` folder.
+
+
 Folders
 -------
 Create directory structure like below.
@@ -63,21 +68,30 @@ Create directory structure like below.
 .
 ├── assets
 ├── build
-    ├── derived
-    └── UI // Same relative position to `assets` as `UI/scss`
+|   ├── derived
+|   └── UI // Same relative position to `assets` as `UI/scss`
 ├── Classes
-    ├── eppz!js
-        └── eppz!js.min.js
-    └── <ProjectName>!app.js
+|   ├── eppz!js
+|   |   └── eppz!js.min.js // optional
+|   └── <ProjectName>!app.js
+├── Tests
+|   ├── js
+|   |   ├── chai.js // required
+|   |   └── mocha.js // required
+|   ├── Suite
+|   |   └── <Test>.js
+|   └── <ProjectName>!app.js
 ├── UI
-    └── scss
-        └── index.scss
+|   └── scss
+|       └── index.scss
 ├── .gitignore
 ├── Gruntfile.js
 ├── index.html
 ├── package.json
 └── README.md
 ```
+
+> Or create a copy of this repo (per project).
 
 
 Start watching
@@ -90,7 +104,7 @@ grunt
 Goodies
 =======
 
-Simply use `include` at the top of sources.
+Simply use `include` at the top of sources (even in tests).
 ```
 include('AwesomeClassToUse.js');
 
