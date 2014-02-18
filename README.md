@@ -30,6 +30,14 @@ Compass
 ```
 
 
+Grunt
+-----
+```
+[sudo] npm install -g grunt-cli
+```
+
+
+
 Per project
 ===========
 
